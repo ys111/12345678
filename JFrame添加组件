@@ -1,0 +1,7 @@
+用getContentPane（）方法获得JFrame的内容面板，再使用add（）方法向其中加入组件。例如：
+frame.getContentPane().add(new JLabel("hello"));
+建立一个JPanel或JDesktopPane等中间容器，把组件添加到中间容器中，再用setContetPane()方法把该容器设置为JFrame的内容面板。例如：
+JPanel contentPane=new JPanel();
+JButton b=new JButton("确定");
+contentPane.add(b);
+frame.setContentPane(contentPane);
